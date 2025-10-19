@@ -47,11 +47,18 @@ else     System.out.println("#"+numbers3[4]+" are larger than #"+numbers3[0]+"."
     swap.add("first");
     swap.add("second");
     swap.add("last");
+    System.out.println("the list before: "+swap);
 
     String temp1 = swap.get(0), temp2= swap.get(2);
     swap.set(0,temp2);
     swap.set(2,temp1);
 
+    System.out.println("the list after: "+swap);
+    System.out.println("************");
+    System.out.println("Q4 ended.\n\nQ5 started");
+    ArrayList<Integer> oddFirst = new ArrayList();
+    int[] randomInt = {1,2,2,4,5,3,6,7,9,1,14};
+    //
 
 
 
