@@ -63,9 +63,19 @@ colors.add("red");
 colors.add("black");
 colors.add("green");
 colors.add("blue");
-colors.set(1,"white");
-colors.remove("green");
-System.out.println(colors);
+//colors.set(1,"white");
+//colors.remove("green");
+System.out.println("List:\n"+colors);
+
+for(String color: colors)
+{
+
+    if(color.length()<=3)
+        System.out.println(color+" is short.");
+    else    System.out.println(color+" is tall.");
+
+
+}
 
 
 
