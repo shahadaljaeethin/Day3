@@ -40,5 +40,37 @@ for(String n: names)
     System.out.print(n+", ");
 }
 
+ArrayList info = new ArrayList();
+ArrayList<String> str = new ArrayList();
+str.add("one");
+str.add("delete this");
+str.remove("delete this");
+//str.add(6,"seven");
+//.set("") for updating.
+
+    ArrayList<String> cars2 = new ArrayList();
+    cars2.add("BMW");
+    cars2.add("Ford");
+    cars2.add("Mazda");
+    cars2.remove("null");
+if(    cars2.remove("null")
+)    System.out.println("deleted"); else     System.out.println("not deleted");
+cars2.set(0,"New bmw");
+
+    System.out.println(cars2);
+ArrayList<String> colors = new ArrayList();
+colors.add("red");
+colors.add("black");
+colors.add("green");
+colors.add("blue");
+colors.set(1,"white");
+colors.remove("green");
+System.out.println(colors);
+
+
+
+
+
+
 }
 }

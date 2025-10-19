@@ -5,3 +5,6 @@ non pri from devs
 arrays are refrence not premitive?
 
 refrence can print null but primituve will show error
+arrayLisy. add with index does shift not overwrite it.
+
+if(list.remove) -> will return true if works well, or false of error.
