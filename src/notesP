@@ -2,4 +2,6 @@ primitive vs non primitive.
 
 primitive bedaeeyh like int double etc
 non pri from devs
-arrays are refrence not prim?
+arrays are refrence not premitive?
+
+refrence can print null but primituve will show error
