@@ -16,7 +16,7 @@ public class Day7methods {
 print("The smallest number is "+smallest(nums));
 q(2);
         print("Enter a number to check if it is +/- or zero: ");
-       // nums[0] = r.nextInt();
+        nums[0] = r.nextInt();
         //call the method
         print(checkNum(nums[0]));
 /*-----------------------------------------
@@ -27,6 +27,7 @@ q(2);
 print("Welcome, please make a password with these three rules:");
 // call methods
 String pass = setPassword();
+print("your password is set.");
     }
 
 static int smallest(int[] l){
@@ -71,18 +72,23 @@ public static boolean length(String s){
 
   public  static boolean charCheck(String s){
         char[] c = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9'};
-        boolean check = false;
+        int allLetters = s.length();
+        s = s.toLowerCase();
         for(int i=0;i<s.length();i++){ //letter by letter in string
-            for(int ch=0;ch<c.length;ch++){ //char by char in array
-            if(s.charAt(i).toLowerCase()==c[ch]);
 
+            for(int ch=0;ch<c.length;ch++){
+//             print("size: "+allLetters);
+            //char by char in array
+            if(s.charAt(i)==c[ch])
+            allLetters--;
 
             }
 
         }
-
+      if(allLetters==0)
+return true;
       print("Error: *Password must contains letters and digits only*");
-return check;
+return false;
     }
 
 
