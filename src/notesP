@@ -10,3 +10,6 @@ arrayLisy. add with index does shift not overwrite it.
 if(list.remove) -> will return true if works well, or false of error.
 
 we can use for each only when we assign the list to an object f.e: Al<String>
+-------
+argument = parameters
+        ArrayList<String> names = new ArrayList<>();
